@@ -1,6 +1,6 @@
 # Support the Open Source Projects We Depend On
 
-Scientific Agent Skills is built on the shoulders of giants. The 135 skills in this repository leverage dozens of incredible open source projects created and maintained by dedicated developers and research communities around the world.
+GARCH QUANT Skills is built on the shoulders of giants. The 135 skills in this repository leverage dozens of incredible open source projects created and maintained by dedicated developers and research communities around the world.
 
 **If you find value in these skills, please consider supporting the underlying open source projects that make them possible.**
 
@@ -171,9 +171,9 @@ Consider supporting their mission to advance single-cell research.
 
 ---
 
-## A Note from K-Dense
+## A Note from GARCH QUANT
 
-At K-Dense, we believe in giving back to the communities that make our work possible. We encourage all users of Scientific Agent Skills to:
+At GARCH QUANT, we believe in giving back to the communities that make our work possible. We encourage all users of GARCH QUANT Skills to:
 
 1. **Acknowledge** these projects when you use them in research
 2. **Contribute** back improvements when you can

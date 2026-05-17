@@ -4,7 +4,7 @@ description: Create publication-quality scientific diagrams using Nano Banana 2 
 allowed-tools: Read Write Edit Bash
 license: MIT license
 metadata:
-    skill-author: K-Dense Inc.
+    skill-author: GARCH QUANT Inc.
 ---
 
 # Scientific Schematics and Diagrams

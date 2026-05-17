@@ -4,7 +4,7 @@ description: Generate professional clinical decision support (CDS) documents for
 allowed-tools: Read Write Edit Bash
 license: MIT License
 metadata:
-    skill-author: K-Dense Inc.
+    skill-author: GARCH QUANT Inc.
 ---
 
 # Clinical Decision Support Documents

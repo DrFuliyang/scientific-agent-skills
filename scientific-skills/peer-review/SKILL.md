@@ -4,7 +4,7 @@ description: Structured manuscript/grant review with checklist-based evaluation.
 allowed-tools: Read Write Edit Bash
 license: MIT license
 metadata:
-    skill-author: K-Dense Inc.
+    skill-author: GARCH QUANT Inc.
 ---
 
 # Scientific Critical Evaluation and Peer Review

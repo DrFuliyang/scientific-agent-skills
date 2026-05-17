@@ -5,7 +5,7 @@ allowed-tools: Read Write Edit Bash
 license: MIT license
 compatibility: parallel-cli required (primary); PARALLEL_API_KEY and OPENROUTER_API_KEY optional for deep/academic backends
 metadata:
-    skill-author: K-Dense Inc.
+    skill-author: GARCH QUANT Inc.
 ---
 
 # Research Information Lookup

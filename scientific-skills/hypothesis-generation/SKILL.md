@@ -4,7 +4,7 @@ description: Structured hypothesis formulation from observations. Use when you h
 allowed-tools: Read Write Edit Bash
 license: MIT license
 metadata:
-    skill-author: K-Dense Inc.
+    skill-author: GARCH QUANT Inc.
 ---
 
 # Scientific Hypothesis Generation

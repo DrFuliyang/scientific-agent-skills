@@ -82,7 +82,7 @@ Verify by running any script with `--help` — it will exit cleanly if the key i
 
 ### Tracking header
 
-Every script in this skill sets the `x-exa-integration` request header to `k-dense-ai--scientific-agent-skills` so Exa can attribute usage from the K-Dense AI scientific-agent-skills repo to this integration. Do not remove or rename this header when adapting the scripts.
+Every script in this skill sets the `x-exa-integration` request header to `GARCH QUANT-ai--garch-quant-skills` so Exa can attribute usage from the GARCH QUANT AI garch-quant-skills repo to this integration. Do not remove or rename this header when adapting the scripts.
 
 ---
 

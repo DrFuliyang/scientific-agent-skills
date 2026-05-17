@@ -4,7 +4,7 @@ description: Benchling R&D platform integration. Access registry (DNA, proteins)
 license: Unknown
 compatibility: Requires a Benchling account and API key
 metadata:
-    skill-author: K-Dense Inc.
+    skill-author: GARCH QUANT Inc.
 ---
 
 # Benchling Integration

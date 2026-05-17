@@ -166,7 +166,7 @@ class IntegrationHeaderAndFlowTests(unittest.TestCase):
         _, client, _ = self._run_with_mock(["what is attention", "--highlights"])
         self.assertEqual(
             client.headers.get("x-exa-integration"),
-            "k-dense-ai--scientific-agent-skills",
+            "GARCH QUANT-ai--garch-quant-skills",
         )
 
     def test_calls_search_and_contents_when_contents_requested(self):

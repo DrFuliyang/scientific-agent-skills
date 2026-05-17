@@ -4,7 +4,7 @@ description: Write comprehensive clinical reports including case reports (CARE g
 allowed-tools: Read Write Edit Bash
 license: MIT License
 metadata:
-    skill-author: K-Dense Inc.
+    skill-author: GARCH QUANT Inc.
 ---
 
 # Clinical Report Writing

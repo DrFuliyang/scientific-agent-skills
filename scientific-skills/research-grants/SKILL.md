@@ -4,7 +4,7 @@ description: Write competitive research proposals for NSF, NIH, DOE, DARPA, and 
 allowed-tools: Read Write Edit Bash
 license: MIT license
 metadata:
-    skill-author: K-Dense Inc.
+    skill-author: GARCH QUANT Inc.
 ---
 
 # Research Grant Writing

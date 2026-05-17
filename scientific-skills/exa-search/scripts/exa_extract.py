@@ -31,7 +31,7 @@ except ImportError:
     sys.exit(2)
 
 
-EXA_INTEGRATION_HEADER = "k-dense-ai--scientific-agent-skills"
+EXA_INTEGRATION_HEADER = "GARCH QUANT-ai--garch-quant-skills"
 
 
 @dataclass

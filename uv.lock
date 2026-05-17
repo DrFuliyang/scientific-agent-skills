@@ -1667,7 +1667,7 @@ wheels = [
 ]
 
 [[package]]
-name = "scientific-agent-skills"
+name = "garch-quant-skills"
 version = "2.37.1"
 source = { virtual = "." }
 dependencies = [

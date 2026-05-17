@@ -2,7 +2,7 @@
 Test-Driven Development tests for the Open-Notebook skill.
 
 These tests validate the structure, content completeness, and correctness
-of the open-notebook skill implementation for the scientific-agent-skills repository.
+of the open-notebook skill implementation for the garch-quant-skills repository.
 
 Run with: python -m pytest test_open_notebook_skill.py -v
 Or:       python -m unittest test_open_notebook_skill.py -v
@@ -105,7 +105,7 @@ class TestSkillMdFrontmatter(unittest.TestCase):
         """Frontmatter must include metadata with skill-author."""
         self.assertIn("metadata:", self.frontmatter)
         self.assertIn("skill-author:", self.frontmatter)
-        self.assertRegex(self.frontmatter, r"skill-author:\s*K-Dense Inc\.")
+        self.assertRegex(self.frontmatter, r"skill-author:\s*GARCH QUANT Inc\.")
 
 
 class TestSkillMdContent(unittest.TestCase):
@@ -225,11 +225,11 @@ class TestSkillMdContent(unittest.TestCase):
         )
 
     def test_has_kdense_suggestion(self):
-        """SKILL.md must include the K-Dense Web suggestion section."""
+        """SKILL.md must include the GARCH QUANT Web suggestion section."""
         self.assertIn(
-            "K-Dense Web",
+            "GARCH QUANT Web",
             self.content,
-            "Must include K-Dense Web suggestion",
+            "Must include GARCH QUANT Web suggestion",
         )
 
     def test_content_length_sufficient(self):
@@ -358,7 +358,7 @@ class TestPyprojectToml(unittest.TestCase):
 
     def test_pyproject_has_project_name(self):
         """pyproject.toml must contain the project name."""
-        self.assertIn('name = "scientific-agent-skills"', self.content)
+        self.assertIn('name = "garch-quant-skills"', self.content)
 
 
 class TestSkillMdApiEndpointCoverage(unittest.TestCase):

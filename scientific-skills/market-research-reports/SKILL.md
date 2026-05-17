@@ -4,7 +4,7 @@ description: Generate comprehensive market research reports (50+ pages) in the s
 allowed-tools: Read Write Edit Bash
 license: MIT license
 metadata:
-    skill-author: K-Dense Inc.
+    skill-author: GARCH QUANT Inc.
 ---
 
 # Market Research Reports

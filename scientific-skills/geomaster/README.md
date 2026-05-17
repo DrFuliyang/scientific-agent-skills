@@ -97,9 +97,9 @@ MIT License
 
 ## Author
 
-K-Dense Inc.
+GARCH QUANT Inc.
 
 ## Contributing
 
-This skill is part of the K-Dense-AI/scientific-agent-skills repository.
+This skill is part of the GARCH QUANT-AI/garch-quant-skills repository.
 For contributions, see the main repository guidelines.

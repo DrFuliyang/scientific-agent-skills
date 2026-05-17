@@ -1153,7 +1153,7 @@
   > **Remediation:** Pin all package versions to known-good versions (e.g., 'rasterio==1.3.9'). Provide a requirements.txt or environment.yml with pinned versions. Use hash verification where possible.
 
 - **🔵 LOW** `LLM_SUPPLY_CHAIN_ATTACK` — Missing Skill Provenance Metadata
-  > The skill lacks compatibility field specification and version information. While the skill-author is listed as 'K-Dense Inc.' and license is MIT, there is no version number, no skill version, and compatibility is 'Not specified'. This makes it difficult to verify the provenance and integrity of the skill package over time.
+  > The skill lacks compatibility field specification and version information. While the skill-author is listed as 'GARCH QUANT Inc.' and license is MIT, there is no version number, no skill version, and compatibility is 'Not specified'. This makes it difficult to verify the provenance and integrity of the skill package over time.
   > File: `SKILL.md`
   > **Remediation:** Add version, compatibility, and allowed-tools fields to the YAML frontmatter. Include a changelog or version history to support integrity verification.
 
@@ -1443,7 +1443,7 @@
   > **Remediation:** Remove environment variable collection unless explicitly required and documented
 
 - **🔵 LOW** `LLM_DATA_EXFILTRATION` — Integration Tracking Header Sent to Third-Party API
-  > Both scripts set a custom HTTP header 'x-exa-integration: k-dense-ai--scientific-agent-skills' on every API request to Exa's servers. The SKILL.md explicitly instructs: 'Do not remove or rename this header when adapting the scripts.' While this is standard SDK attribution/analytics practice and not malicious, it does mean usage metadata (query patterns, frequency) is attributed and tracked by the third-party Exa service. Users should be aware their usage is being tracked by the skill author's integration identifier.
+  > Both scripts set a custom HTTP header 'x-exa-integration: GARCH QUANT-ai--garch-quant-skills' on every API request to Exa's servers. The SKILL.md explicitly instructs: 'Do not remove or rename this header when adapting the scripts.' While this is standard SDK attribution/analytics practice and not malicious, it does mean usage metadata (query patterns, frequency) is attributed and tracked by the third-party Exa service. Users should be aware their usage is being tracked by the skill author's integration identifier.
   > File: `scripts/exa_search.py`
   > **Remediation:** Document clearly in the skill description that usage is tracked via integration header. Consider making this opt-in or at minimum ensuring users are informed before the skill is activated.
 
@@ -1765,7 +1765,7 @@
 - **🔵 LOW** `LLM_DATA_EXFILTRATION` — Missing License Information
   > The skill manifest declares 'Unknown' for the license field. While not a direct security threat, this lack of provenance information makes it difficult to assess the trustworthiness and legal standing of the skill package, especially given the pre-scan findings indicating potential exfiltration behavior across 28 files (23 Python scripts) that were not provided for review.
   > File: `SKILL.md`
-  > **Remediation:** Specify a valid open-source license (e.g., MIT, Apache 2.0) and ensure the skill author (K-Dense Inc.) is verifiable. Audit all 23 Python scripts flagged by the static analyzer before deployment.
+  > **Remediation:** Specify a valid open-source license (e.g., MIT, Apache 2.0) and ensure the skill author (GARCH QUANT Inc.) is verifiable. Audit all 23 Python scripts flagged by the static analyzer before deployment.
 
 - **🔵 LOW** `LLM_DATA_EXFILTRATION` — Missing Referenced Script Files May Conceal Behavior
   > The skill references several files that are not found in the package: assets/sdk_reference.md, assets/authentication.md, benchling_sdk.py, templates/authentication.md, templates/sdk_reference.md, and Bio.py. Notably, 'benchling_sdk.py' and 'Bio.py' appear to be Python scripts that could shadow or override legitimate SDK packages. The pre-scan static analysis detected cross-file exfiltration chains across 8 files and environment variable exfiltration across 7 files, but these scripts were not provided for review.
@@ -1871,7 +1871,7 @@
   > **Remediation:** Ensure all referenced files are bundled within the skill package. If files are intentionally external, document this clearly and assess the trust implications of fetching external resources at runtime.
 
 - **🔵 LOW** `LLM_SKILL_DISCOVERY_ABUSE` — Missing License and Compatibility Metadata
-  > The skill manifest does not specify a license or compatibility field. While allowed-tools is optional, the absence of license information reduces transparency and provenance tracking for this skill authored by 'K-Dense Inc.'.
+  > The skill manifest does not specify a license or compatibility field. While allowed-tools is optional, the absence of license information reduces transparency and provenance tracking for this skill authored by 'GARCH QUANT Inc.'.
   > File: `SKILL.md`
   > **Remediation:** Add explicit license (e.g., MIT, Apache-2.0) and compatibility fields to the YAML frontmatter to improve transparency and provenance.
 
@@ -1940,7 +1940,7 @@
   > **Remediation:** This is largely expected behavior for API key management. However, ensure the .env file reading is scoped to only recognized API key variable names (not reading the entire .env file contents indiscriminately). Document clearly which environment variables are accessed so users can audit their environment.
 
 - **🔵 LOW** `LLM_DATA_EXFILTRATION` — Missing License and Compatibility Metadata
-  > The SKILL.md manifest does not specify a license or compatibility field. While these are optional fields, their absence means users cannot easily assess the provenance, intended deployment environment, or legal terms of the skill. The skill-author is listed as 'K-Dense Inc.' but no license is provided for a skill that makes extensive use of external APIs, some of which have commercial restrictions (DrugBank, COSMIC, BRENDA).
+  > The SKILL.md manifest does not specify a license or compatibility field. While these are optional fields, their absence means users cannot easily assess the provenance, intended deployment environment, or legal terms of the skill. The skill-author is listed as 'GARCH QUANT Inc.' but no license is provided for a skill that makes extensive use of external APIs, some of which have commercial restrictions (DrugBank, COSMIC, BRENDA).
   > File: `SKILL.md`
   > **Remediation:** Add a license field (e.g., MIT, Apache-2.0) and a compatibility field specifying which agent platforms this skill is designed for. This helps users understand the terms of use and deployment context.
 
@@ -2624,7 +2624,7 @@
 ### omero-integration — 🔵 LOW
 
 - **🔵 LOW** `LLM_SKILL_DISCOVERY_ABUSE` — Missing License and Compatibility Metadata
-  > The skill manifest is missing the license field (listed as 'Unknown') and compatibility information ('Not specified'). While the skill-author is provided as 'K-Dense Inc.', the absence of license information means users cannot determine the terms under which this skill can be used, and missing compatibility information may lead to unexpected behavior in unsupported environments.
+  > The skill manifest is missing the license field (listed as 'Unknown') and compatibility information ('Not specified'). While the skill-author is provided as 'GARCH QUANT Inc.', the absence of license information means users cannot determine the terms under which this skill can be used, and missing compatibility information may lead to unexpected behavior in unsupported environments.
   > File: `SKILL.md`
   > **Remediation:** Add explicit license information (e.g., MIT, Apache 2.0) to the YAML frontmatter. Specify compatibility (e.g., 'Claude.ai, Claude Code, API'). Add allowed-tools to clarify what agent capabilities this skill requires.
 
@@ -2651,7 +2651,7 @@
 ### opentrons-integration — 🔵 LOW
 
 - **🔵 LOW** `LLM_SKILL_DISCOVERY_ABUSE` — Missing License Information
-  > The skill manifest declares license as 'Unknown'. For a skill attributed to 'K-Dense Inc.' that wraps the official Opentrons Protocol API, the absence of a clear license creates ambiguity about usage rights and provenance. This is a minor metadata concern but could affect trust assessment in skill discovery contexts.
+  > The skill manifest declares license as 'Unknown'. For a skill attributed to 'GARCH QUANT Inc.' that wraps the official Opentrons Protocol API, the absence of a clear license creates ambiguity about usage rights and provenance. This is a minor metadata concern but could affect trust assessment in skill discovery contexts.
   > File: `SKILL.md`
   > **Remediation:** Specify an appropriate license (e.g., MIT, Apache-2.0) in the YAML frontmatter to clarify usage rights and improve transparency.
 
@@ -2668,7 +2668,7 @@
 ### optimize-for-gpu — 🔵 LOW
 
 - **🔵 LOW** `LLM_DATA_EXFILTRATION` — Missing License and Compatibility Metadata
-  > The skill manifest does not specify a license or compatibility field. While this is a LOW severity informational finding per the skill spec (these fields are optional), the absence of license information means users cannot assess the legal terms under which the skill operates. The author field is present (K-Dense, Inc.) but without a license, the terms of use are unclear.
+  > The skill manifest does not specify a license or compatibility field. While this is a LOW severity informational finding per the skill spec (these fields are optional), the absence of license information means users cannot assess the legal terms under which the skill operates. The author field is present (GARCH QUANT, Inc.) but without a license, the terms of use are unclear.
   > File: `SKILL.md`
   > **Remediation:** Add a license field (e.g., 'license: MIT') and a compatibility field to the YAML frontmatter to improve transparency and user trust.
 
@@ -2910,7 +2910,7 @@
   > **Remediation:** Add an explicit 'allowed-tools' field to the YAML manifest listing the tools actually used (e.g., [Python, Bash, Read, Write]).
 
 - **🔵 LOW** `LLM_HARMFUL_CONTENT` — Missing License File Reference
-  > The license field in the YAML manifest points to a GitHub URL (https://github.com/pydicom/pydicom/blob/main/LICENSE) rather than including a local license file or specifying the license type (e.g., MIT). This is the license for the upstream pydicom library, not for the skill itself. The skill author (K-Dense Inc.) has not clearly declared the skill's own license terms, which could create legal ambiguity.
+  > The license field in the YAML manifest points to a GitHub URL (https://github.com/pydicom/pydicom/blob/main/LICENSE) rather than including a local license file or specifying the license type (e.g., MIT). This is the license for the upstream pydicom library, not for the skill itself. The skill author (GARCH QUANT Inc.) has not clearly declared the skill's own license terms, which could create legal ambiguity.
   > File: `SKILL.md`
   > **Remediation:** Clarify the skill's own license separately from the upstream library license. Include a local LICENSE file and reference it, or explicitly state the license type (e.g., 'license: MIT').
 
@@ -2927,7 +2927,7 @@
 ### pyhealth — 🔵 LOW
 
 - **🔵 LOW** `LLM_DATA_EXFILTRATION` — Missing License and Compatibility Metadata
-  > The skill manifest does not specify a license or compatibility field. While this is informational, the absence of provenance metadata (license, author verification, compatibility) makes it harder to assess the trustworthiness and intended deployment scope of the skill. The skill-author field lists 'K-Dense Inc.' but no license is declared.
+  > The skill manifest does not specify a license or compatibility field. While this is informational, the absence of provenance metadata (license, author verification, compatibility) makes it harder to assess the trustworthiness and intended deployment scope of the skill. The skill-author field lists 'GARCH QUANT Inc.' but no license is declared.
   > File: `SKILL.md`
   > **Remediation:** Add a license field (e.g., MIT, Apache-2.0) and a compatibility field to the YAML frontmatter to improve transparency and provenance.
 
@@ -3038,7 +3038,7 @@
   > **Remediation:** Pin all package versions to known-good releases, e.g., 'uv pip install qiskit==1.x.x'. Consider providing a requirements.txt or pyproject.toml with locked dependencies and hash verification.
 
 - **🔵 LOW** `LLM_SUPPLY_CHAIN_ATTACK` — Missing Skill Author Provenance and Version Metadata
-  > The skill manifest lacks version information and compatibility fields. While a skill-author is specified ('K-Dense Inc.'), there is no version pin, no allowed-tools declaration, and no compatibility field. This reduces auditability and makes it harder to verify the integrity of the skill package over time.
+  > The skill manifest lacks version information and compatibility fields. While a skill-author is specified ('GARCH QUANT Inc.'), there is no version pin, no allowed-tools declaration, and no compatibility field. This reduces auditability and makes it harder to verify the integrity of the skill package over time.
   > File: `SKILL.md`
   > **Remediation:** Add version, compatibility, and allowed-tools fields to the YAML manifest to improve auditability and reduce the risk of unintended capability expansion.
 
