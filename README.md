@@ -1,6 +1,6 @@
 # Scientific research skills
 
-[Research hub](https://github.com/DrFuliyang/garch-quant) · [Research programmes](https://github.com/DrFuliyang/garch-quant/blob/main/research/README.md)
+[Research hub](https://github.com/DrFuliyang/research) · [Research programmes](https://github.com/DrFuliyang/research/blob/main/research/README.md)
 
 A broad collection of scientific agent skills and supporting resources maintained in Fuli Yang's GitHub account. Individual skill folders contain their own instructions, references, and, where provided, scripts.
 
