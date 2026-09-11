@@ -1,63 +1,36 @@
-# GARCH QUANT · Scientific Quant Agent
+# Scientific research skills
 
-> 非商业化学术量化研究智能代理 | 波动率与宏观周期专属算力引擎
+[Research hub](https://github.com/DrFuliyang/garch-quant) · [Research programmes](https://github.com/DrFuliyang/garch-quant/blob/main/research/README.md)
 
----
+A broad collection of scientific agent skills and supporting resources maintained in Fuli Yang's GitHub account. Individual skill folders contain their own instructions, references, and, where provided, scripts.
 
-### 项目定位
+## Start with the research task
 
-本代理框架，是面向专业买方策略研究员、计量金融研究者打造的专属智能科研与量化建模基础设施。
+| Task | Resources |
+| :--- | :--- |
+| Statistical modelling | [statsmodels](scientific-skills/statsmodels/) · [PyMC](scientific-skills/pymc/) · [statistical analysis](scientific-skills/statistical-analysis/) |
+| Time series | [aeon](scientific-skills/aeon/) · [TimesFM](scientific-skills/timesfm-forecasting/) |
+| Data work | [exploratory analysis](scientific-skills/exploratory-data-analysis/) · [Polars](scientific-skills/polars/) · [Dask](scientific-skills/dask/) |
+| Literature and writing | [literature review](scientific-skills/literature-review/) · [citation management](scientific-skills/citation-management/) · [scientific writing](scientific-skills/scientific-writing/) |
+| Figures and presentation | [Matplotlib](scientific-skills/matplotlib/) · [scientific visualization](scientific-skills/scientific-visualization/) · [scientific slides](scientific-skills/scientific-slides/) |
+| Review | [peer review](scientific-skills/peer-review/) · [critical thinking](scientific-skills/scientific-critical-thinking/) |
 
-剥离通用科学冗余模块，深度聚焦金融时间序列、随机波动率、贝叶斯统计与高阶计量建模领域，恪守第一性原理与学术严谨性。
+Browse the full [skill collection](scientific-skills/) for other disciplines.
 
----
+## Repository contents
 
-### 原生核心能力
+- `scientific-skills/`: individual skills and supporting resources.
+- `docs/`: project documentation.
+- `scan_skills.py` and `scan_pr_skills.py`: skill-scanning utilities.
+- `pyproject.toml` and `uv.lock`: Python environment metadata.
+- [SECURITY.md](SECURITY.md): security guidance.
 
-| 编号 | 能力模块 | 核心功能 |
-|:---:|---------|---------|
-| 1 | **GARCH 族波动率建模** | 标准 GARCH / GJR-GARCH / DCC-GARCH / Bayesian-GARCH 融合架构，精准捕捉市场异方差与聚类波动特征 |
-| 2 | **贝叶斯概率推理体系** | 完整后验估计、先验设定、信念动态更新，适配小样本、高不确定性资产环境 |
-| 3 | **区制与周期识别** | Markovian 状态切换、Hamilton 宏观周期拆解、拐点 Kairos 时序定位 |
-| 4 | **高阶统计与厚尾拟合** | Gaussian / Poissonian / Riemannian 流形建模，精准刻画尾部风险与极端行情 |
-| 5 | **衍生品与市场结构分析** | Gamma Exposure(GEX)、波动率曲面、跳跃扩散过程定价与风险测算 |
+Read the instructions for the specific skill you intend to use. Its runtime and external-service requirements may differ from the repository's scanner environment.
 
----
+## Documentation correction
 
-### 核心架构
+The earlier top-level quick-start referenced `requirements.txt` and `main.py`; those files are absent from this repository. This README now points to the resources actually present. The Python project metadata currently requires Python 3.13 or later.
 
-```
-GARCH QUANT
-├── 贝叶斯计量内核
-├── 波动率建模引擎
-├── 宏观周期研究员
-├── 衍生品风控模块
-├── 时序数据清洗与回测套件
-└── 学术论文辅助与结果校验工具
-```
+## Attribution and license
 
----
-
-### 设计哲学
-
-- ✅ 精准度优先于礼貌，第一性原理驱动
-- ✅ 全程使用严谨学术词根，禁用泛滥希腊字母口水术语
-- ✅ 仅接入真实官方行情数据源，零模拟数据
-- ✅ 中立客观学术视角，无主观市场研判与营销引导
-
----
-
-### 本地快速启动
-
-```bash
-pip install -r requirements.txt
-python main.py --mode quant --core garch
-```
-
----
-
-### 开源声明
-
-本项目仅用于非商业学术与策略研究用途。GARCH QUANT 为独立专属学术研究品牌，与原上游通用科学代理项目做品牌与定位完全切割。
-
----
+See [LICENSE.md](LICENSE.md) and any component-specific attribution and terms. This collection includes resources across many scientific disciplines; its presence in this account is not a claim of original authorship for every component.
